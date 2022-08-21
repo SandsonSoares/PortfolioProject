@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Pré-set*/
 *{
     padding: 0;
     margin: 0;
@@ -28,4 +29,107 @@ h1,h2,h3,h4,h5{
     
     --titulo: 'Rubik', sans-serif;
     --corpo: 'Oswald', sans-serif;
+}
+
+
+/*Top*/
+header{
+    width: 100%;
+    height: 100px;
+}
+.topside{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(-150deg, var(--preto), var(--marrom));
+    border: 2px solid var(--marrom);
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+}
+.topside h1{
+    transition: all 222ms;
+}
+.topside h1:hover{
+    text-shadow: -3px -3px 2px rgba(0, 0, 0, 0.511);
+}
+.redeSociais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.redeSociais a{
+    margin: 5px;
+}
+.redeSociais img{
+    width: 35px;
+    height: 35px;
+    transition: all 111ms;
+}
+.redeSociais img:hover{
+    width: 40px;
+    height: 40px;
+}
+.animation{
+    animation: zapper 20s infinite linear;
+}
+@keyframes zapper {
+    0%{
+        background-image: linear-gradient(-150deg, var(--preto), var(--marrom));
+    }
+    100%{
+        background-image: linear-gradient(150deg, var(--preto), var(--marrom));
+    }
+}
+
+/*corpo*/
+
+.bottom{
+    border: 1px solid red;
+    min-width: 280px;
+    max-width: 1440px;
+    margin: auto;
+}
+.topo{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #534c3f, var(--branco));
+    padding: 10px;
+}
+#sobre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#LeftSide{
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 250px;
+    max-height: 500px;
+}
+#LeftSide img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--marrom);
+}
+#RightSide{
+    padding: 10px;
+    text-indent: 15px;
+    text-align: justify;
+    width: 300px;
+    height: 300px;
 }
