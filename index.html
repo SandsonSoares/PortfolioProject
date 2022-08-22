@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SandsonSoares</title>
-    <link rel="shortcut icon" href="https://img.icons8.com/ios/500/s.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagem/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="Raiz.css">
+    <script src="interacoes.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,10 @@
         <section class="topside animation">
             <h1>SandsonSoares</h1>
             <div class="redeSociais">
-                <a href="#" target="_blank"><img src="linkedin.png" alt="Linkedin"></a>
-                <a href="#" target="_blank"><img src="github.png" alt="GitHub"></a>
-                <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-                <a href="#" target="_blank"><img src="whatsapp.png" alt="Whatsapp"></a>
+                <a href="#" target="_blank"><img src="./imagem/linkedin.png" alt="Linkedin"></a>
+                <a href="#" target="_blank"><img src="./imagem/github.png" alt="GitHub"></a>
+                <a href="#" target="_blank"><img src="./imagem/instagram.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="./imagem/whatsapp.png" alt="Whatsapp"></a>
             </div>
         </section>
     </header>
@@ -31,12 +32,13 @@
 
             <div id="LeftSide">
                 <div class="imagem">
-                    <abbr title="SandsonSoares"> <img src="Att foto perfil.jfif" alt="Sandson Soares da Silva" id="sandson"></abbr>
+                    <abbr title="SandsonSoares"> <img src="./imagem/Att foto perfil.jfif" alt="Sandson Soares da Silva"
+                            id="sandson"></abbr>
                     <div class="subredes">
-                        <a href="#" target="_blank"><img src="whatsapp.png" alt="Whatsapp"></a>
-                        <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="#" target="_blank"><img src="github.png" alt="GitHub"></a>
-                        <a href="#" target="_blank"><img src="linkedin.png" alt="Linkedin"></a>
+                        <a href="#" target="_blank"><img src="./imagem/whatsapp.png" alt="Whatsapp"></a>
+                        <a href="#" target="_blank"><img src="./imagem/instagram.png" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="./imagem/github.png" alt="GitHub"></a>
+                        <a href="#" target="_blank"><img src="./imagem/linkedin.png" alt="Linkedin"></a>
                     </div>
                 </div>
             </div>
@@ -58,21 +60,43 @@
 
             <h2>Trabalhos anteriores</h2>
 
-            <div class="work">
-                <a href="#"><img src="" alt="Teste"></a>
+            <div class="show">
+                <div class="work">
+                    <img src="./imagem/cardapio.jpg" alt="Teste">
+                    <div class="sombra" onclick="acessar(1)"></div>
+                </div>
+
+                <div class="work">
+                    <img src="imagem/leadingPage.jpg" alt="Teste">
+                    <div class="sombra" onclick="acessar(2)"></div>
+                </div>
+
+                <div class="work">
+                    <a href="#"><img src="imagem/jornal.jpg" alt="Teste"></a>
+                    <div class="sombra" onclick="acessar(3)"></div>
+                </div>
             </div>
 
-            <div class="work">
-                <a href="#"><img src="" alt="Teste"></a>
+            <div class="show sumir">
+                <div class="work">
+                    <a href="#"><img src="imagem/quiz.jpg" alt="Teste"></a>
+                    <div class="sombra" onclick="acessar(4)"></div>
+                </div>
+                <div class="work">
+                    <a href="#"><img src="imagem/breve.jpg" alt="Teste"></a>
+                    <div class="sombra" onclick="acessar(11)"></div>
+                </div>
+                <div class="work">
+                    <a href="#"><img src="imagem/breve.jpg" alt="Teste"></a>
+                    <div class="sombra" onclick="acessar(10)"></div>
+                </div>
             </div>
 
-            <div class="work">
-                <a href="#"><img src="" alt="Teste"></a>
-            </div>
-
-            <button class="botao">Veja mais ...</button>
+            <button class="botao" onclick="ativar()">Veja mais</button>
 
         </section>
+
+
 
     </main>
 
@@ -84,9 +108,9 @@
             <sub>Tecnologias ultilizadas</sub>
 
             <div class="tech">
-                <img src="" alt="Html 5">
-                <img src="" alt="Css 3">
-                <img src="" alt="JavaScript">
+                <abbr title="HTML 5"><img src="imagem/html.png" alt="Html 5"></abbr>
+                <abbr title="CSS 3 "><img src="imagem/css.png" alt="Css 3"></abbr>
+                <abbr title="JAVACRIPT"><img src="imagem/javascript.png" alt="JavaScript"></abbr>
             </div>
 
         </section>

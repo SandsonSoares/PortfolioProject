@@ -1,44 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Pré-set*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: darkgray;
 }
-p{
+
+p {
     font-family: var(--corpo);
 }
-h1,h2,h3,h4,h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--titulo);
 }
-:root{
-    --preto:#000000;
-    --branco:#ffffff;
-    --marrom: #B3A892; /*Gradiente = Preto + marrom*/
-    --dark:#534c3f;
+
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --marrom: #B3A892;
+    /*Gradiente = Preto + marrom*/
+    --dark: #534c3f;
 
     --variante1: #F3E7CD;
     --variante2: #FFF7E1;
 
 
     /*Fontes*/
-    
+
     --titulo: 'Rubik', sans-serif;
     --corpo: 'Oswald', sans-serif;
 }
 
 
 /*Top*/
-header{
+header {
     width: 100%;
     height: 100px;
 }
-.topside{
+
+.topside {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(-150deg, var(--preto), var(--marrom));
@@ -52,14 +62,17 @@ header{
     justify-content: space-around;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
 }
-.topside h1{
+
+.topside h1 {
     transition: all 222ms;
     cursor: pointer;
 }
-.topside h1:hover{
+
+.topside h1:hover {
     text-shadow: -3px -3px 2px rgba(0, 0, 0, 0.511);
 }
-.redeSociais{
+
+.redeSociais {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -67,45 +80,46 @@ header{
     justify-content: space-evenly;
     padding: 10px;
 }
-.redeSociais a{
+
+.redeSociais a {
     margin: 5px;
 }
-.redeSociais img{
+
+.redeSociais img {
     width: 35px;
     height: 35px;
     transition: all 111ms;
 }
-.redeSociais img:hover{
+
+.redeSociais img:hover {
     width: 40px;
     height: 40px;
 }
-.animation{
+
+.animation {
     animation: zapper 20s infinite linear;
 }
+
 @keyframes zapper {
-    0%{
+    0% {
         background-image: linear-gradient(-150deg, var(--preto), var(--marrom));
     }
-    100%{
+
+    100% {
         background-image: linear-gradient(150deg, var(--preto), var(--marrom));
     }
 }
 
-/*corpo*/
+/*Topside - Corpo*/
 
-.bottom{
-    border: 1px solid red;
-    min-width: 280px;
-    max-width: 1440px;
-    margin: auto;
-}
-.topo{
+.topo {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom, #534c3f, var(--branco));
     padding: 5px;
 }
-#sobre{
+
+#sobre {
     max-width: 1440px;
     min-width: 280px;
     height: 100%;
@@ -116,66 +130,218 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
-#LeftSide{
+
+#LeftSide {
     width: 350px;
 }
-.imagem{
+
+.imagem {
     width: 350px;
 }
+
 #sandson {
     width: 100%;
     height: 100%;
     border: 4px solid var(--variante1);
     transition: all 222ms;
 }
-#sandson:hover{
+
+#sandson:hover {
     border: 1px solid var(--variante1);
 }
-.subredes{
+
+.subredes {
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     background-image: linear-gradient(to left, #534c3f61, transparent);
     margin-top: -5px;
     display: none;
 }
-.subredes img{
+
+.subredes img {
     width: 35px;
     height: 35px;
     margin: 5px;
 }
+
 @media (max-width:460px) {
-    .redeSociais{
+    .redeSociais {
         display: none;
     }
-    .subredes{
+
+    .subredes {
         display: flex;
     }
 }
-#RightSide{
+
+#RightSide {
     width: 350px;
     padding: 10px;
 
 }
+
 #RightSide p {
     width: 100%;
     height: 300px;
     padding: 10px;
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
+
 @media (max-width: 730px) {
-    #sobre{
+    #sobre {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
     }
 
 }
+
 @media (max-height: 700px) {
-    .topo{
+    .topo {
         height: 150vh;
     }
 
+}
+
+/*Botside*/
+
+.bottom {
+    min-width: 280px;
+    max-width: 1440px;
+    min-height: 240px;
+    max-height: 500px;
+    margin: auto;
+    transition: all 333ms;
+}
+
+.mostruario {
+    background-color: var(--dark);
+    color: var(--variante1);
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 150px;
+}
+
+@media (min-width: 1440px) {
+    .mostruario {
+        border-radius: 15px;
+    }
+}
+
+.mostruario h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.309);
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 930px;
+    min-width: 300px;
+    margin: auto;
+
+}
+
+.work {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--marrom);
+    cursor: pointer;
+    transition: all 333ms;
+}
+
+.work:hover {
+    border: 1px solid var(--marrom);
+}
+
+.sombra {
+    background-color: rgba(0, 0, 0, 0.227);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 850px) {
+    .show {
+        flex-wrap: wrap;
+    }
+}
+
+.sumir {
+    display: none;
+
+}
+
+.botao {
+    display: block;
+    margin: 10px auto -25px auto;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: var(--variante1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.515);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 333ms;
+}
+
+.botao:hover {
+    background-color: var(--variante2);
+    border: none;
+    padding: 10px;
+}
+
+/*rodape*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+
+}
+.botside {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2d2d;
+}
+
+.tech {
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+}
+
+.tech img {
+    width: 50px;
+    height: 50px;
+    transition: 555ms;
+}
+.tech img:hover {
+    width: 55px;
+    height: 55px;
+}
+
+footer sub {
+    display: block;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
