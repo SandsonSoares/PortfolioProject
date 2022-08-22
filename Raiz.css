@@ -23,7 +23,15 @@ h4,
 h5 {
     font-family: var(--titulo);
 }
+html,body{
+    height: 100%;
+    position: relative;
+}
 
+
+.conteudo{
+    flex: 1 0 auto;
+}
 :root {
     --preto: #000000;
     --branco: #ffffff;
@@ -212,7 +220,7 @@ header {
     min-width: 280px;
     max-width: 1440px;
     min-height: 240px;
-    max-height: 500px;
+    max-height: 1500px;
     margin: auto;
     transition: all 333ms;
 }
@@ -269,11 +277,15 @@ header {
 }
 
 .sombra {
-    background-color: rgba(0, 0, 0, 0.227);
+    background-color: black;
+    opacity: .2;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
+}
+.sombra:hover{
+    opacity: 0;
 }
 
 @media(max-width: 850px) {
@@ -284,7 +296,6 @@ header {
 
 .sumir {
     display: none;
-
 }
 
 .botao {
@@ -311,9 +322,8 @@ header {
 footer {
     width: 100%;
     height: 100px;
-    margin-top: 100px;
-
 }
+
 .botside {
     width: 100%;
     height: 100%;
@@ -321,7 +331,7 @@ footer {
 }
 
 .tech {
-    width: 170px;
+    width: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
