@@ -138,12 +138,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
-@media (min-width: 740px) {
-    #sobre{
-        align-items: flex-start;
-        margin-top: 150px;
-    }
-}
 
 #LeftSide {
     width: 350px;
@@ -191,7 +185,8 @@ header {
 #RightSide {
     width: 350px;
     padding: 10px;
-
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.566);
 }
 
 #RightSide p {
@@ -218,6 +213,15 @@ header {
         height: 150vh;
     }
 
+}
+@media (min-width: 740px) {
+    #sobre{
+        align-items: flex-start;
+        margin-top: 150px;
+    }
+    #RightSide {
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
+    }
 }
 
 /*Botside*/
