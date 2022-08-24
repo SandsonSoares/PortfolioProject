@@ -138,6 +138,12 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
+@media (min-width: 740px) {
+    #sobre{
+        align-items: flex-start;
+        margin-top: 150px;
+    }
+}
 
 #LeftSide {
     width: 350px;
