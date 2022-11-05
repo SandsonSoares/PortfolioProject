@@ -151,6 +151,9 @@ main {
 .quadro img {
     border-radius: 5px;
 }
+#sandson{
+    cursor: auto;
+}
 
 #legenda {
     font-family: var(--bebas);
