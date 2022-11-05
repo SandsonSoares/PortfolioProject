@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --verde: #006c67;
+    --amarelo: #FFBF00;
+    --cinza: #A6A6A6;
+
+    --roboto: 'Roboto', sans-serif;
+    --bebas: 'Bebas Neue', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 222ms;
+}
+
+body,
+html {
+    min-height: 100vh;
+    position: relative;
+    transition: all 555ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: var(--roboto);
+}
+
+h1,
+h2 {
+    font-family: var(--bebas);
+}
+
+#back {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 90vh;
+    left: 95vw;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.671);
+}
+
+#back p {
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    width: 20px;
+    height: 20px;
+    transform: rotate(136deg);
+}
+
+header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.cabeca {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cabeca a {
+    color: white;
+    position: relative;
+}
+
+.cabeca a:hover {
+    color: var(--amarelo);
+}
+
+.cabeca li {
+    display: inline-block;
+    height: 100%;
+    font-family: var(--roboto);
+    width: 100px;
+    padding: 10px;
+    margin-right: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.cabeca li:hover {
+    background-color: #a6a6a644;
+}
+
+/*apresentação*/
+
+main {
+    padding: 20px;
+}
+
+#apresentacao {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.quadro {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.quadro img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+    transition: all 555ms;
+}
+
+.quadro img:hover {
+    box-shadow:
+        1.4px 0.8px 1.2px rgba(0, 0, 0, 0.021),
+        3px 1.8px 2.7px rgba(0, 0, 0, 0.031),
+        5px 3px 4.6px rgba(0, 0, 0, 0.038),
+        7.6px 4.5px 6.9px rgba(0, 0, 0, 0.044),
+        10.9px 6.5px 10px rgba(0, 0, 0, 0.05),
+        15.4px 9.2px 14.2px rgba(0, 0, 0, 0.056),
+        21.9px 13.1px 20.1px rgba(0, 0, 0, 0.062),
+        31.8px 19px 29.2px rgba(0, 0, 0, 0.069),
+        48.9px 29.3px 45px rgba(0, 0, 0, 0.079),
+        87px 52px 80px rgba(0, 0, 0, 0.1);
+}
+
+.quadro,
+.quadro img {
+    border-radius: 5px;
+}
+
+#legenda {
+    font-family: var(--bebas);
+    text-align: right;
+    font-size: 1.1em;
+}
+
+#txt {
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 20px;
+}
+
+strong {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
+}
+
+#produtos {
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 30px;
+
+}
+
+#produtos h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#grade {
+    background-color: var(--cinza);
+    width: 80vw;
+    height: 300px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);
+}
+
+.prod {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod li {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.prod a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.prod li:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.541);
+}
+
+#cardapio {
+    background-image: url("imagem/cardapio.jpg");
+}
+
+#perfume {
+    background-image: url("imagem/Smell.png");
+}
+
+#leading {
+    background-image: url("imagem/leadingPage.jpg");
+}
+
+#qrCode {
+    background-image: url("imagem/QrCode.png");
+}
+
+#quiz {
+    background-image: url("imagem/quiz.jpg");
+}
+
+#faq {
+    background-image: url("imagem/Faq.png");
+}
+
+#jornal {
+    background-image: url("imagem/jornal.jpg");
+}
+
+#convite {
+    background-image: url("imagem/Invite.png");
+}
+
+/*contato*/
+
+footer {
+    box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.493);
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 5px 10px 30px 10px;
+}
+
+footer section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+}
+
+footer a {
+    color: white;
+    font-family: var(--roboto);
+}
+
+footer h2 {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer ul span:hover {
+    color: var(--amarelo);
+}
+
+.tech li {
+    display: inline-block;
+}
+.tech img{
+    width: 50px;
+    height: 50px;
+}
+.tech img:hover{
+    height: 48px;
+    width: 48px;
+    opacity: .7;
+}
+@media(max-width:1050px){
+    #back{
+        left: 90vw;
+    }
+    .prod{
+        justify-content: center;
+    }
+}
+@media(max-width:730px){
+    footer section{
+        flex-wrap: wrap;
+    }
+    footer section div {
+        width: 100%;
+    }
+    #back{
+        left: 85vw;
+    }
+}
+@media (max-width:422px){
+    #grade{
+        width: 90vw;
+    }
+}
+@media (max-width: 380px){
+    #grade{
+        width: 70vw;
+    }
+}
+@media (min-width: 1400px) {
+    #apresentacao{
+        height: 80vh;
+    }
+}
